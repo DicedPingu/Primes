@@ -106,6 +106,6 @@ print(np.fromiter(prime_maker_first(primes_to_make), dtype=np.int32))
 print(np.fromiter(prime_maker_second(primes_to_make * 20), dtype=np.int32))
 # Other function, only 12 times faster than OG
 print(np.fromiter(prime_maker_np(primes_to_make * 12), dtype=np.int32))
-# Total beast function, you have to calculate the number you want primes up to
+# Total beast function, 8000 times faster, you have to calculate the number you want primes up to
 # The number needed to reach a certain amount of primes is 'n * (log(n) + log(log(n)))'
 print(prime_maker_sieve(int(primes_to_make*(log(primes_to_make) + log(log(primes_to_make)))) * 8000))
